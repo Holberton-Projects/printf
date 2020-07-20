@@ -7,7 +7,6 @@
 
 int _printChar(va_list list)
 {
-
 	char s;
 
 	s = va_arg(list, int);

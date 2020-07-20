@@ -13,7 +13,7 @@ int _printf(const char *format, ...)
 	va_list list;
 	unsigned int charprinted = 0;
 	unsigned int i;
-	char (*call_print)();
+	int (*call_print)();
 
 	if ((!format) || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
