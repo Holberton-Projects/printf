@@ -7,23 +7,22 @@
  * Return: a pointer to the function
  */
 
-int (*_getmatch_print(char *s))(va_list)
+int (*_getmatch_print(const char f_type))()
 {
 	format_t matchs[] = {
 	    {"c", _printChar},
 	    {"s", _printString},
 	    {"d", _printInt},
 	    {"i", _printInt},
-	    {NULL, NULL}};
-	unsigned int i;
+	    {NULL, NULL}
+	};
+	unsigned int i = 0;
 
-	i = 0;
-
-	while (matchs[i].op)
+	while (matchs[i].type)
 	{
-		if (_strcmp(s, (matchs[i].op)) == 0)
+		if (matchs[i].type[0] == f_type)
 		{
-			return (*(matchs[i]).j);
+			return (matchs[i].func_fmt);
 		}
 		i++;
 	}
