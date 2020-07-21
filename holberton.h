@@ -7,7 +7,7 @@
 /**
  * struct format - Struct op
  * @type: The operator
- * @j: The function associated
+ * @func_fmt: The function associated
  */
 typedef struct format
 {

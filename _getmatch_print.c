@@ -3,7 +3,7 @@
 /**
  * _getmatch_print - selects the correct func to perform the operation
  * sked by the user
- * @s: operator passed as arguement to program
+ * @f_type: operator passed as arguement to program
  * Return: a pointer to the function
  */
 
