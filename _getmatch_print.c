@@ -14,6 +14,7 @@ int (*_getmatch_print(const char f_type))()
 	    {"s", _printString},
 	    {"d", _printInt},
 	    {"i", _printInt},
+		{"b", _printBinary},
 	    {NULL, NULL}
 	};
 	unsigned int i = 0;
