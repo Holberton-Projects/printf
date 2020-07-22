@@ -29,13 +29,17 @@ int _printBinary(va_list inte)
 				num /= 2;
 			}
 
-			for (i -= 1; i >= 0 ; i--)
+			for (i -= 1; i >= 0; i--)
 			{
 				_putchar(bin[i] + '0');
 				count_number++;
 			}
 		}
 	}
-
+	else
+	{
+		_putchar('0');
+		return (1);
+	}
 	return (count_number);
 }
