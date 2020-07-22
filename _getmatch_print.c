@@ -15,6 +15,10 @@ int (*_getmatch_print(const char f_type))()
 	    {"d", _printInt},
 	    {"i", _printInt},
 	    {"b", _printBinary},
+	    {"o", _ptintOcatl},
+	    {"u", _printUnsInt},
+	    {"x", _printHexaLower},
+	    {"X", _printHexaUpper},
 	    {NULL, NULL}
 	};
 	unsigned int i = 0;

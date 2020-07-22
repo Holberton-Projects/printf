@@ -23,6 +23,11 @@ int _printInt(va_list i);
 int _strcmp(char *s1, char *s2);
 int _putchar(char c);
 int _printBinary(va_list inte);
+int _printUnsInt(va_list inte);
+int _ptintOcatl(va_list inte);
+int _printHexaLower(va_list inte);
+int _printHexaUpper(va_list inte);
+
 
 
 #endif /* #ifndef PRINTF_H */
