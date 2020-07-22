@@ -22,6 +22,7 @@ int _printString(va_list s);
 int _printInt(va_list i);
 int _strcmp(char *s1, char *s2);
 int _putchar(char c);
+int _printBinary(va_list inte);
 
 
 #endif /* #ifndef PRINTF_H */
